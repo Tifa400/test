@@ -1,0 +1,1070 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spider Club</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.svg" />
+  <link rel="stylesheet" href="../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="../assets/libs/aos-master/dist/aos.css">
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    /* From Uiverse.io by andrew-demchenk0 */ 
+.glitch {
+  position: relative;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  letter-spacing: 5px;
+  z-index: 1;
+  animation: shift 1s ease-in-out infinite alternate;
+}
+
+.glitch:before,
+.glitch:after {
+  display: block;
+  content: attr(data-glitch);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.glitch:before {
+  animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  color: #8b00ff;
+  z-index: -1;
+}
+
+.glitch:after {
+  animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  color: #00e571;
+  z-index: -2;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-3px, 3px);
+  }
+
+  40% {
+    transform: translate(-3px, -3px);
+  }
+
+  60% {
+    transform: translate(3px, 3px);
+  }
+
+  80% {
+    transform: translate(3px, -3px);
+  }
+
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes shift {
+  0%, 40%, 44%, 58%, 61%, 65%, 69%, 73%, 100% {
+    transform: skewX(0deg);
+  }
+
+  41% {
+    transform: skewX(10deg);
+  }
+
+  42% {
+    transform: skewX(-10deg);
+  }
+
+  59% {
+    transform: skewX(40deg) skewY(10deg);
+  }
+
+  60% {
+    transform: skewX(-40deg) skewY(-10deg);
+  }
+
+  63% {
+    transform: skewX(10deg) skewY(-5deg);
+  }
+
+  70% {
+    transform: skewX(-50deg) skewY(-20deg);
+  }
+
+  71% {
+    transform: skewX(10deg) skewY(-10deg);
+  }
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100">
+    <div class="container">
+      <div class="header-wrapper d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <a href="index.html" class="logo-white">
+            <img src="../assets/images/logos/spiderclubtxt.png" alt="Spider Club logo" class="img-fluid">
+          </a>
+          <a href="index.html" class="logo-dark">
+            <img src="../assets/images/logos/spiderclubtxt.png" alt="Spider Club logo" class="img-fluid">
+          </a>
+        </div>
+        <div class="d-flex align-items-center gap-4">
+
+          <div class="btn-group">
+            <button
+              class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle"
+              type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+              <iconify-icon icon="solar:hamburger-menu-line-duotone" class="menu-icon fs-8 text-dark"></iconify-icon>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end p-4">
+              <div class="d-flex flex-column gap-6">
+                <div class="hstack justify-content-between border-bottom pb-6">
+                  <p class="mb-0 fs-5 text-dark">Menu</p>
+                  <button type="button" class="btn-close opacity-75" aria-label="Close"></button>
+                </div>
+                <div class="d-flex flex-column gap-3">
+                  <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-2">
+                    <li class="header-item">
+                      <a href="index.html" aria-current="true"
+                        class="header-link active hstack gap-2 fs-7 fw-bold text-dark"><img
+                          src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                          class="img-fluid animate-spin">Home</a>
+                    </li>
+                    <li class="header-item">
+                      <a href="about-us.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                          src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                          class="img-fluid animate-spin">Join us on Tor</a>
+                    </li>
+                    <li class="header-item">
+                      <a href="projects.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                          src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                          class="img-fluid animate-spin">X</a>
+                    </li>
+                    <li class="header-item">
+                      <a href="blog.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                          src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                          class="img-fluid animate-spin">Telegram</a>
+                    </li>
+                    
+                  </ul>
+                  
+                </div>
+                <div>
+                  <a class="text-dark" href="tel:+1-212-456-7890"> </a>
+                  <a class="fs-8 text-dark fw-bold" href="mailto:info@wrappixel.com">info@onion.mail</a>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--  Page Wrapper -->
+  <div class="page-wrapper overflow-hidden">
+
+    <!--  Banner Section -->
+    <section class="banner-section position-relative d-flex align-items-end min-vh-100">
+      <video class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" autoplay muted loop playsinline>
+        <source src="../assets/images/backgrounds/spider.mp4" type="video/mp4" />
+      </video>
+      <div class="container">
+        <div class="d-flex flex-column gap-4 pb-8 position-relative z-1">
+          <div class="row align-items-center">
+            <div class="col-xl-4">
+              <div class="d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="100"
+                data-aos-duration="1000">
+                <img src="../assets/images/svgs/icons8-spider-web-48.png" alt="" class="img-fluid animate-spin">
+                <p class="mb-0 text-white fs-5 text-opacity-70">we <span
+                    class="text-primary"> weave a safe world for you, </span> and we leave no trace of you.</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <h1 class="mb-0 fs-16 text-white lh-1">Spider Club</h1>
+            <a href="javascript:void(0)" class="p-1 ps-7 bg-primary rounded-pill">
+              <span class="bg-white round-52 rounded-circle d-flex align-items-center justify-content-center">
+                <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Stats & Facts Section -->
+    <section class="stats-facts py-5 py-lg-11 py-xl-12 position-relative overflow-hidden">
+      <div class="container">
+        <div class="row gap-7 gap-xl-0">
+          <div class="col-xl-4 col-xxl-4">
+            <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
+              data-aos-duration="1000">
+              <span
+                class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">01</span>
+              <hr class="border-line">
+              <span class="badge text-bg-dark">Spider Club</span>
+            </div>
+          </div>
+          <div class="col-xl-8 col-xxl-7">
+            <div class="d-flex flex-column gap-9">
+              <div class="row">
+                <div class="col-xxl-8">
+                  <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
+                    data-aos-duration="1000">
+                    <h2 class="mb-0">Connect, trade, and speak freely—leaving zero trace behind.</h2>
+                    <p class="fs-5 mb-0">​A complete social space and marketplace engineered around zero data retention. Share ideas, buy and sell with peace of mind, and belong to a community strictly guarded against harm, violence, and abuse—without ever surrendering your identity.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-lg-4 mb-7 mb-lg-0">
+                  <div class="d-flex flex-column gap-6 pt-9 border-top" data-aos="fade-up" data-aos-delay="200"
+                    data-aos-duration="1000">
+                    <h2 class="mb-0 fs-14"></span>0-Trace</h2>
+                    <p class="mb-0">We don't collect, store, or monetize your personal data. Your activity belongs solely to the moment.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-7 mb-lg-0">
+                  <div class="d-flex flex-column gap-6 pt-9 border-top" data-aos="fade-up" data-aos-delay="300"
+                    data-aos-duration="1000">
+                    <h2 class="mb-0 fs-14"></span>Clean Space</h2>
+                    <p class="mb-0">Strict zero-tolerance enforcement against violent, harmful, and unethical content—keeping the club safe without spying on users</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-7 mb-lg-0">
+                  <div class="d-flex flex-column gap-6 pt-9 border-top" data-aos="fade-up" data-aos-delay="400"
+                    data-aos-duration="1000">
+                    <h2 class="mb-0 fs-14"></span>Open Market</h2>
+                    <p class="mb-0">Post freely and trade directly in a built-in marketplace designed for human connection, not behavioral tracking.</p>
+                  </div>
+                </div>
+              </div>
+              <a href="about-us.html" class="btn" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                <span class="btn-text">Learn more about the Spider Club</span>
+                <iconify-icon icon="lucide:arrow-up-right"
+                  class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="position-absolute bottom-0 start-0" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+        <img src="../assets/images/backgrounds/stats-facts-bg.svg" alt="" class="img-fluid">
+      </div>
+    </section>
+
+    <!--  Featured Projects Section -->
+    <section class="featured-projects py-5 py-lg-11 py-xl-12 bg-light-gray">
+      <div class="d-flex flex-column gap-5 gap-xl-11">
+        <div class="container">
+          <div class="row gap-7 gap-xl-0">
+            <div class="col-xl-4 col-xxl-4">
+              <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
+                data-aos-duration="1000">
+                <span
+                  class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">02</span>
+                <hr class="border-line">
+                <span class="badge text-bg-dark">about us</span>
+              </div>
+            </div>
+            <div class="col-xl-8 col-xxl-7">
+              <div class="row">
+                <div class="col-xxl-8">
+                  <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
+                    data-aos-duration="1000">
+                    <h2 class="mb-0">Who are we?</h2>
+                    <!-- From Uiverse.io by andrew-demchenk0 --> 
+<div class="loader">
+   <div data-glitch="Spider Club" class="glitch">Spider Club</div>
+</div>
+                    <p class="fs-5 mb-0">​Spider Club is a complete social network and marketplace built on a single conviction: human connection and commerce shouldn't cost you your privacy or your safety. For years, the web forced a false choice between surveillance platforms that harvest every click and chaotic spaces with zero boundaries—we refused both. Engineered around zero data retention, Spider Club never tracks your habits, builds shadow profiles, or monetizes your personal information, yet maintains strict, zero-tolerance boundaries against violent, harmful, and unethical content. Here, you can share ideas, connect freely, and trade directly in a clean, human-first environment—a web woven not to trap you, but to protect those inside it</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+
+    <!--  Services Section -->
+    <section class="services py-5 py-lg-11 py-xl-12 bg-dark" id="services">
+      <div class="container">
+        <div class="d-flex flex-column gap-5 gap-xl-10">
+          <div class="row gap-7 gap-xl-0">
+            <div class="col-xl-4 col-xxl-4">
+              <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
+                data-aos-duration="1000">
+                <span
+                  class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">03</span>
+                <hr class="border-line bg-white">
+                <span class="badge text-dark bg-white">Why spider club?</span>
+              </div>
+            </div>
+            <div class="col-xl-8 col-xxl-7">
+              <div class="row">
+                <div class="col-xxl-8">
+                  <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
+                    data-aos-duration="1000">
+                    <div class="loader">
+   <div data-glitch="Spider Club" class="glitch">Spider Club</div>
+</div>
+                    <p class="fs-5 mb-0 text-white text-opacity-70">A direct look at why people choose a social space and marketplace built on zero data retention, privacy, and strict protection against harm</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="services-tab">
+            <div class="row gap-5 gap-xl-0">
+              <div class="col-xl-4">
+                <div class="tab-content" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+                  <div class="tab-pane active" id="one" role="tabpanel" aria-labelledby="one-tab" tabindex="0">
+                    <img src="../assets/images/backgrounds/spider-web-black-house-spider-illustration-hand-painted-spider-web-8dbbce6a5490960669e35de028719e17.png" alt="services" class="img-fluid">
+                  </div>
+                  <div class="tab-pane" id="two" role="tabpanel" aria-labelledby="two-tab" tabindex="0">
+                    <img src="../assets/images/services/services-img-2.jpg" alt="services" class="img-fluid">
+                  </div>
+                  <div class="tab-pane" id="three" role="tabpanel" aria-labelledby="three-tab" tabindex="0">
+                    <img src="../assets/images/services/services-img-3.jpg" alt="services" class="img-fluid">
+                  </div>
+                  <div class="tab-pane" id="four" role="tabpanel" aria-labelledby="four-tab" tabindex="0">
+                    <img src="../assets/images/services/services-img-4.jpg" alt="services" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-8">
+                <div class="d-flex flex-column gap-5">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist" data-aos="fade-up" data-aos-delay="200"
+                    data-aos-duration="1000">
+                    <li
+                      class="nav-item py-4 py-lg-8 border-top border-white border-opacity-10 d-flex align-items-center w-100"
+                      role="presentation">
+                      <div class="row w-100 align-items-center gx-3">
+                        <div class="col-lg-6 col-xxl-5">
+                          <button class="nav-link fs-10 fw-bold py-1 px-0 border-0 rounded-0 flex-shrink-0 active"
+                            id="one-tab" data-bs-toggle="tab" data-bs-target="#one" type="button" role="tab"
+                            aria-controls="one" aria-selected="true">​Zero identifiers</button>
+                        </div>
+                        <div class="col-lg-6 col-xxl-7">
+                          <p class="text-white text-opacity-70 mb-0">
+                           No emails, phone numbers, IP logs, or behavioral tracking. We don't collect or store personal data or log your activity—keeping your presence on the platform free from data harvesting.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="nav-item py-4 py-lg-8 border-top border-white border-opacity-10 d-flex align-items-center w-100"
+                      role="presentation">
+                      <div class="row w-100 align-items-center gx-3">
+                        <div class="col-lg-6 col-xxl-5">
+                          <button class="nav-link fs-10 fw-bold py-1 px-0 border-0 rounded-0 flex-shrink-0" id="two-tab"
+                            data-bs-toggle="tab" data-bs-target="#two" type="button" role="tab" aria-controls="two"
+                            aria-selected="false">​Active content protection</button>
+                        </div>
+                        <div class="col-lg-6 col-xxl-7">
+                          <p class="text-white text-opacity-70 mb-0">Strict enforcement blocks violent, harmful, and unethical content before it spreads, backed by active moderation and direct reporting—keeping the space safe without spying on users.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="nav-item py-4 py-lg-8 border-top border-white border-opacity-10 d-flex align-items-center w-100"
+                      role="presentation">
+                      <div class="row w-100 align-items-center gx-3">
+                        <div class="col-lg-6 col-xxl-5">
+                          <button class="nav-link fs-10 fw-bold py-1 px-0 border-0 rounded-0 flex-shrink-0"
+                            id="three-tab" data-bs-toggle="tab" data-bs-target="#three" type="button" role="tab"
+                            aria-controls="three" aria-selected="false">marketplace</button>
+                        </div>
+                        <div class="col-lg-6 col-xxl-7">
+                          <p class="text-white text-opacity-70 mb-0">
+                           ​A built-in marketplace where you can list items, discover offers, and connect directly to buy and sell without turning your trade history into a data profile.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="nav-item py-4 py-lg-8 border-top border-white border-opacity-10 d-flex align-items-center w-100"
+                      role="presentation">
+                      <div class="row w-100 align-items-center gx-3">
+                        <div class="col-lg-6 col-xxl-5">
+                          <button class="nav-link fs-10 fw-bold py-1 px-0 border-0 rounded-0 flex-shrink-0"
+                            id="four-tab" data-bs-toggle="tab" data-bs-target="#four" type="button" role="tab"
+                            aria-controls="four" aria-selected="false">Social without footprint</button>
+                        </div>
+                        <div class="col-lg-6 col-xxl-7">
+                          <p class="text-white text-opacity-70 mb-0">​Post updates, share ideas, and interact across the community in a clean feed engineered to connect people without tracking every reaction or building a profile on you.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <a href="projects.html" class="btn border border-white border-opacity-25" data-aos="fade-up"
+                    data-aos-delay="300" data-aos-duration="1000">
+                    <span class="btn-text">Learn more</span>
+                    <iconify-icon icon="lucide:arrow-up-right"
+                      class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Why choose us Section -->
+    <section class="why-choose-us py-5 py-lg-11 py-xl-12">
+      <div class="container">
+        <div class="row justify-content-between gap-5 gap-xl-0">
+          <div class="col-xl-3 col-xxl-3">
+            <div class="d-flex flex-column gap-7">
+              <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
+                data-aos-duration="1000">
+                <span
+                  class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">04</span>
+                <hr class="border-line">
+                <span class="badge text-bg-dark">Why choose us</span>
+              </div>
+              <h2 class="mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Why choose us</h2>
+              <p class="mb-0 fs-5" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">​We combine zero data retention with strict content safety to build a social space and marketplace where privacy and responsibility coexist.</p>
+            </div>
+          </div>
+          <div class="col-xl-9 col-xxl-8">
+            <div class="row">
+              <div class="col-lg-4 mb-7 mb-lg-0">
+                <div class="card position-relative overflow-hidden bg-primary h-100" data-aos="fade-up"
+                  data-aos-delay="100" data-aos-duration="1000">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <div class="d-flex flex-column gap-3 position-relative z-1">
+                      <ul class="list-unstyled mb-0 hstack gap-1">
+                        <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold"
+                              class="fs-6 text-dark"></iconify-icon></a></li>
+                        <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold"
+                              class="fs-6 text-dark"></iconify-icon></a></li>
+                        <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold"
+                              class="fs-6 text-dark"></iconify-icon></a></li>
+                        <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold"
+                              class="fs-6 text-dark"></iconify-icon></a></li>
+                        <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-line-duotone"
+                              class="fs-6 text-dark"></iconify-icon></a></li>
+                      </ul>
+                      <p class="mb-0 fs-6 text-dark">Privacy without compromise—built for people who refuse to be tracked.
+                      </p>
+                    </div>
+                    <div class="position-relative z-1">
+                      <div class="pb-6 border-bottom">
+                        <h2 class="mb-0">0%</h2>
+                        <p class="mb-0"> Personal data retained</p>
+                      </div>
+                      <div class="hstack gap-6 pt-6">
+                      <div>
+                          <h5 class="mb-0">Spider Club Standard</h5>
+                       
+                        </div>
+                      </div>
+                    </div>
+                    <div class="position-absolute bottom-0 end-0">
+                      <img src="../assets/images/backgrounds/customer-satisfaction-bg.svg" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-7 mb-lg-0">
+                <div class="d-flex flex-column gap-7" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                  <div class="position-relative">
+                    <img src="../assets/images/backgrounds/scattredspider.png" alt="" class="img-fluid w-100">
+                  </div>
+
+                  <div class="card bg-dark">
+                    <div class="card-body d-flex flex-column gap-7">
+                      <div>
+                        <h2 class="mb-0 text-white">24/7</h2>
+                        <p class="mb-0 text-white text-opacity-70">Active defense against harm, violence, and abuse</p>
+                      </div>
+                      <ul class="d-flex align-items-center mb-0">
+                        <li>
+                          <a href="javascript:void(0)">
+                            <img src="../assets/images/profile/user-1.jpg" width="44" height="44"
+                              class="rounded-circle border border-2 border-dark" alt="Community member">
+                          </a>
+                        </li>
+                        <li class="ms-n2">
+                          <a href="javascript:void(0)">
+                            <img src="../assets/images/profile/user-2.jpg" width="44" height="44"
+                              class="rounded-circle border border-2 border-dark" alt="Community member">
+                          </a>
+                        </li>
+                        <li class="ms-n2">
+                          <a href="javascript:void(0)">
+                            <img src="../assets/images/profile/user-3.jpg" width="44" height="44"
+                              class="rounded-circle border border-2 border-dark" alt="Community member">
+                          </a>
+                        </li>
+                        <li class="ms-n2">
+                          <a href="javascript:void(0)">
+                            <img src="../assets/images/profile/user-4.jpg" width="44" height="44"
+                              class="rounded-circle border border-2 border-dark" alt="Community member">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-7 mb-lg-0">
+                <div class="card border h-100 position-relative overflow-hidden" data-aos="fade-up" data-aos-delay="300"
+                  data-aos-duration="1000">
+                  <span
+                    class="border rounded-circle round-490 d-block position-absolute top-0 start-50 translate-middle"></span>
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                      <p class="mb-0 text-dark">Social feed & direct marketplace</p>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                      <a href="index.html" class="logo-dark">
+                        <img src="../assets/images/logos/spiderclubtxt.png" alt="Spider Club logo" class="img-fluid">
+                      </a>
+                      <p class="mb-0 fs-5 text-dark">​Share posts, discover items, and trade directly in one unified space designed for genuine connection rather than behavioral profiling.</p>
+                    </div>
+                  </div>
+                  <span
+                    class="border rounded-circle round-490 d-block position-absolute top-100 start-50 translate-middle"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Testimonial Section -->
+    <section class="testimonial py-5 py-lg-11 py-xl-12 bg-light-gray">
+      <div class="container">
+        <div class="d-flex flex-column gap-5 gap-xl-11">
+          <div class="row gap-7 gap-xl-0">
+            <div class="col-xl-4 col-xxl-4">
+              <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
+                data-aos-duration="1000">
+                <span
+                  class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">05</span>
+                <hr class="border-line bg-white">
+                <span class="badge text-bg-dark">Security</span>
+              </div>
+            </div>
+            <div class="col-xl-8 col-xxl-7">
+              <div class="row">
+                <div class="col-xxl-8">
+                  <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
+                    data-aos-duration="1000">
+                    <h2 class="mb-0">Security & Survival Controls</h2>
+                    <p class="fs-5 mb-0 text-opacity-70">​Built-in protection mechanisms designed to keep your presence ephemeral, your absence accounted for, and the platform free from harm.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row gap-7 gap-lg-0">
+            <div class="col-lg-4 col-xl-3 d-flex align-items-stretch">
+              <div class="card bg-primary w-100" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                <div class="card-body d-flex flex-column gap-5 gap-xl-11 justify-content-between">
+                  <div class="d-flex flex-column gap-4">
+                    <p class="mb-0">Dead Man's Switch</p>
+                    <h4 class="mb-0">Automated continuity triggers that execute your pre-set instructions if you go silent beyond your configured window.</h4>
+                  </div>
+                  <div class="hstack gap-3">
+                    <img src="../assets/images/svgs/cleaning.png" alt=""
+                      class="img-fluid rounded-circle overflow-hidden flex-shrink-0" width="60" height="60">
+                    <div>
+                      <h5 class="mb-1 fw-normal">Absence Protocol</h5>
+                      <p class="mb-0"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-xl-6 d-flex align-items-stretch">
+              <div class="card bg-dark w-100" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <div class="card-body d-flex flex-column gap-5 gap-xl-11 justify-content-between">
+                  <div class="d-flex flex-column gap-4">
+                    <p class="mb-0 text-white text-opacity-70">15-Day Self-Destruct (Absence Protocol)</p>
+                    <h4 class="mb-0 text-white pe-xl-2">Accounts automatically wipe after just 15 days of inactivity—leaving dormant identities behind rather than piling up stale data.</h4>
+                    <div class="hstack gap-2">
+                      <ul class="list-unstyled mb-0 hstack gap-1">
+                        <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold"
+                              class="fs-6 text-white"></iconify-icon></a></li>
+                        <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold"
+                              class="fs-6 text-white"></iconify-icon></a></li>
+                        <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold"
+                              class="fs-6 text-white"></iconify-icon></a></li>
+                        <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-bold"
+                              class="fs-6 text-white"></iconify-icon></a></li>
+                        <li><a class="hstack" href="javascript:void(0)"><iconify-icon icon="solar:star-line-duotone"
+                              class="fs-6 text-white"></iconify-icon></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="hstack gap-3">
+                      <img src="../assets/images/svgs/fire.png" alt=""
+                        class="img-fluid rounded-circle overflow-hidden flex-shrink-0" width="60" height="60">
+                      <div>
+                        <h5 class="mb-1 fw-normal text-white">Ephemeral Accounts</h5>
+                        <p class="mb-0 text-white text-opacity-70"> </p>
+                      </div>
+                    </div>
+                    <span><img src="../assets/images/testimonial/quete.svg" alt="quote"
+                        class="img-fluid flex-shrink-0"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-xl-3 d-flex align-items-stretch">
+              <div class="card w-100" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <div class="card-body d-flex flex-column gap-5 gap-xl-11 justify-content-between">
+                  <div class="d-flex flex-column gap-4">
+                    <p class="mb-0">24-Hour Auto-Wipe</p>
+                    <h4 class="mb-0">Messages self-destruct automatically after 24 hours (customizable down to 60 seconds in Pro)—paired with zero data retention and strict rules against violent or harmful content</h4>
+                  </div>
+                  <div class="hstack gap-3">
+                    <img src="../assets/images/svgs/delivery.png" alt=""
+                      class="img-fluid rounded-circle overflow-hidden flex-shrink-0" width="60" height="60">
+                    <div>
+                      <h5 class="mb-1 fw-normal">Vanishing Messages</h5>
+                      <p class="mb-0"> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+
+    <!--  Pricing Section -->
+    <section class="pricing-section py-5 py-lg-11 py-xl-12 bg-light-gray">
+      <div class="container">
+        <div class="d-flex flex-column gap-5 gap-xl-10">
+          <div class="d-flex flex-column gap-5 gap-xl-11">
+            <div class="row gap-7 gap-xl-0">
+              <div class="col-xl-4 col-xxl-4">
+                <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
+                  data-aos-duration="1000">
+                  <span
+                    class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">06</span>
+                  <hr class="border-line bg-white">
+                  <span class="badge text-bg-dark">Subscription</span>
+                </div>
+              </div>
+              <div class="col-xl-8 col-xxl-7">
+                <div class="row">
+                  <div class="col-xxl-8">
+                    <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
+                      data-aos-duration="1000">
+                      <h2 class="mb-0">Subscription plans</h2>
+                      <p class="fs-5 mb-0 text-opacity-70">​Start free with zero data retention, or upgrade for extra controls, verification, and duress protection—never for behavioral tracking—with anonymous crypto payments supported.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-xl-4 mb-7 mb-xl-0 d-flex align-items-stretch">
+                <div class="card w-100" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                  <div class="card-body p-7 p-xxl-5 d-flex flex-column gap-8">
+                    <div class="d-flex flex-column gap-6">
+                      <h5 class="mb-0 fw-medium">Free</h5>
+                      <div class="hstack gap-2">
+                        <h3 class="mb-0">$0.00</h3>
+                        <p class="mb-0"></p>
+                      </div>
+                      <p class="mb-0">Essential social posting, marketplace browsing, and zero data retention for everyday members.</p>
+                    </div>
+                    <div class="pt-8 border-top d-flex flex-column gap-6">
+                      <h6 class="mb-0 fw-normal">What’s Included:</h6>
+                      <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                        <li class="hstack gap-3">
+                          <span
+                            class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon
+                              icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span>
+                          <h6 class="mb-0 fw-normal">Zero data retention</h6>
+                        </li>
+                        <li class="hstack gap-3">
+                          <span
+                            class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon
+                              icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span>
+                          <h6 class="mb-0 fw-normal">Social feed posts & direct messaging</h6>
+                        </li>
+                        <li class="hstack gap-3">
+                          <span
+                            class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon
+                              icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span>
+                          <h6 class="mb-0 fw-normal">Marketplace access & basic listings</h6>
+                        </li>
+                        <li class="hstack gap-3">
+                          <span
+                            class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon
+                              icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span>
+                          <h6 class="mb-0 fw-normal">Strict safety & content protection</h6>
+                        </li>
+                      </ul>
+                    </div>
+                    <a href="" class="btn w-100 justify-content-center">
+                      <span class="btn-text">Subscribe now</span>
+                      <iconify-icon icon="lucide:arrow-up-right"
+                        class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-4 mb-7 mb-xl-0 d-flex align-items-stretch">
+                <div class="card w-100" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                  <div class="card-body p-7 p-xxl-5 d-flex flex-column gap-8">
+                    <div class="d-flex flex-column gap-6">
+                      <div class="hstack gap-3">
+                        <h5 class="mb-0 fw-medium">Plus</h5>
+                        <span class="badge text-bg-dark hstack gap-2"><iconify-icon icon="lucide:flame"
+                            class="fs-5"></iconify-icon>Most popular</span>
+                      </div>
+                      <div class="hstack gap-2">
+                        <h3 class="mb-0">$4.99</h3>
+                        <p class="mb-0">/month</p>
+                      </div>
+                      <p class="mb-0">For active members and sellers who want account verification and stronger presence controls.</p>
+                    </div>
+                    <div class="pt-8 border-top d-flex flex-column gap-6">
+                      <h6 class="mb-0 fw-normal">What’s Included:</h6>
+                      <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                        <li class="hstack gap-3">
+                          <span
+                            class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon
+                              icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span>
+                          <h6 class="mb-0 fw-normal">Everything in Free</h6>
+                        </li>
+                        <li class="hstack gap-3">
+                          <span
+                            class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon
+                              icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span>
+                          <h6 class="mb-0 fw-normal">​Plus supporter badge (cryptographically verified, zero-ID)</h6>
+                        </li>
+                        <li class="hstack gap-3">
+                          <span
+                            class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon
+                              icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span>
+                          <h6 class="mb-0 fw-normal">​Higher marketplace listing limit</h6>
+                        </li>
+                        <li class="hstack gap-3">
+                          <span
+                            class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon
+                              icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span>
+                          <h6 class="mb-0 fw-normal">Custom inactivity & 15-day wipe controls</h6>
+                        </li>
+                      </ul>
+                    </div>
+                    <a href="" class="btn w-100 justify-content-center">
+                      <span class="btn-text">Subscribe now</span>
+                      <iconify-icon icon="lucide:arrow-up-right"
+                        class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-4 mb-7 mb-xl-0 d-flex align-items-stretch">
+                <div class="card w-100" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                  <div class="card-body p-7 p-xxl-5 d-flex flex-column gap-8">
+                    <div class="d-flex flex-column gap-6">
+                      <h5 class="mb-0 fw-medium">Pro</h5>
+                      <div class="hstack gap-2">
+                        <h3 class="mb-0">$12.99</h3>
+                        <p class="mb-0">/month</p>
+                      </div>
+                      <p class="mb-0">Built for high-stakes privacy with duress protection, dead man's switch, and full controls</p>
+                    </div>
+                    <div class="pt-8 border-top d-flex flex-column gap-6">
+                      <h6 class="mb-0 fw-normal">What’s Included:</h6>
+                      <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                        <li class="hstack gap-3">
+                          <span
+                            class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon
+                              icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span>
+                          <h6 class="mb-0 fw-normal">Everything in Plus</h6>
+                        </li>
+                        <li class="hstack gap-3">
+                          <span
+                            class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon
+                              icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span>
+                          <h6 class="mb-0 fw-normal">Duress password (decoy / wipe trigger)</h6>
+                        </li>
+                        <li class="hstack gap-3">
+                          <span
+                            class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon
+                              icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span>
+                          <h6 class="mb-0 fw-normal">Dead Man's Switch & automated triggers </h6>
+                        </li>
+                        <li class="hstack gap-3">
+                          <span
+                            class="round-32 rounded-circle bg-primary flex-shrink-0 hstack justify-content-center"><iconify-icon
+                              icon="lucide:check" class="fs-6 text-dark"></iconify-icon></span>
+                          <h6 class="mb-0 fw-normal">60-second read-wipe & quick session lock</h6>
+                        </li>
+                      </ul>
+                    </div>
+                    <a href="" class="btn w-100 justify-content-center">
+                      <span class="btn-text">Subscribe now</span>
+                      <iconify-icon icon="lucide:arrow-up-right"
+                        class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-8" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+            <p class="fs-5 mb-0 text-center text-dark">100% Zero-Log Architecture • End-to-End Encrypted • Strict Anti-Harm Enforcement</p>
+            <div class="marquee w-100 d-flex align-items-center overflow-hidden">
+              <div class="marquee-content d-flex align-items-center gap-8">
+                <div class="marquee-tag hstack justify-content-center">
+                  <img src="../assets/images/svgs/spiderclub.png" alt="Partner logo" class="img-fluid">
+                </div>
+                <div class="marquee-tag hstack justify-content-center">
+                  <img src="../assets/images/svgs/spiderclub.png" alt="Partner logo" class="img-fluid">
+                </div>
+                <div class="marquee-tag hstack justify-content-center">
+                  <img src="../assets/images/svgs/spiderclub.png" alt="Partner logo" class="img-fluid">
+                </div>
+                <div class="marquee-tag hstack justify-content-center">
+                  <img src="../assets/images/svgs/spiderclub.png" alt="Partner logo" class="img-fluid">
+                </div>
+                <div class="marquee-tag hstack justify-content-center">
+                  <img src="../assets/images/svgs/spiderclub.png" alt="Partner logo" class="img-fluid">
+                </div>
+                <div class="marquee-tag hstack justify-content-center">
+                  <img src="../assets/images/svgs/spiderclub.png" alt="Partner logo" class="img-fluid">
+                </div>
+                <div class="marquee-tag hstack justify-content-center">
+                  <img src="../assets/images/svgs/spiderclub.png" alt="Partner logo" class="img-fluid">
+                </div>
+                <div class="marquee-tag hstack justify-content-center">
+                  <img src="../assets/images/svgs/spiderclub.png" alt="Partner logo" class="img-fluid">
+                </div>
+                <div class="marquee-tag hstack justify-content-center">
+                  <img src="../assets/images/svgs/spiderclub.png" alt="Partner logo" class="img-fluid">
+                </div>
+                <div class="marquee-tag hstack justify-content-center">
+                  <img src="../assets/images/svgs/spiderclub.png" alt="Partner logo" class="img-fluid">
+                </div>
+                <div class="marquee-tag hstack justify-content-center">
+                  <img src="../assets/images/svgs/spiderclub.png" alt="Partner logo" class="img-fluid">
+                </div>
+                <div class="marquee-tag hstack justify-content-center">
+                  <img src="../assets/images/svgs/spiderclub.png" alt="Partner logo" class="img-fluid">
+                </div>
+                <div class="marquee-tag hstack justify-content-center">
+                  <img src="../assets/images/svgs/spiderclub.png" alt="Partner logo" class="img-fluid">
+                </div>
+                <div class="marquee-tag hstack justify-content-center">
+                  <img src="../assets/images/svgs/spiderclub.png" alt="Partner logo" class="img-fluid">
+                </div>
+                <div class="marquee-tag hstack justify-content-center">
+                  <img src="../assets/images/svgs/spiderclub.png" alt="Partner logo" class="img-fluid">
+                </div>
+                <div class="marquee-tag hstack justify-content-center">
+                  <img src="../assets/images/svgs/spiderclub.png" alt="Partner logo" class="img-fluid">
+                </div>
+                <div class="marquee-tag hstack justify-content-center">
+                  <img src="../assets/images/svgs/spiderclub.png" alt="Partner logo" class="img-fluid">
+                </div>
+                <div class="marquee-tag hstack justify-content-center">
+                  <img src="../assets/images/svgs/spiderclub.png" alt="Partner logo" class="img-fluid">
+                </div>
+                <div class="marquee-tag hstack justify-content-center">
+                  <img src="../assets/images/svgs/spiderclub.png" alt="Partner logo" class="img-fluid">
+                </div>
+                <div class="marquee-tag hstack justify-content-center">
+                  <img src="../assets/images/svgs/spiderclub.png" alt="Partner logo" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  FAQ Section -->
+    <section class="faq py-5 py-lg-11 py-xl-12">
+      <div class="container">
+        <div class="d-flex flex-column gap-5 gap-xl-11">
+          <div class="row gap-7 gap-xl-0">
+            <div class="col-xl-4 col-xxl-4">
+              <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
+                data-aos-duration="1000">
+                <span
+                  class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">07</span>
+                <hr class="border-line bg-white">
+                <span class="badge text-bg-dark">FAQs</span>
+              </div>
+            </div>
+            <div class="col-xl-8 col-xxl-7">
+              <div class="row">
+                <div class="col-xxl-9">
+                  <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
+                    data-aos-duration="1000">
+                    <h2 class="mb-0">Frequently asked questions</h2>
+                    <p class="fs-5 mb-0 text-opacity-70">Clear answers on how Spider Club protects your privacy, handles marketplace and social activity, and enforces strict safety.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-end">
+            <div class="col-xl-8">
+              <div class="accordion accordion-flush" id="accordionFlushExample" data-aos="fade-up" data-aos-delay="200"
+                data-aos-duration="1000">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-8 fw-bold" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Does Spider Club really retain zero personal data?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body pt-0 fs-5 text-dark">Yes. We do not collect or retain personal identifiers, behavioral profiles, or long-term activity logs. Only what is strictly necessary for the active session and platform function is handled, without building a data dossier on you.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-8 fw-bold" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      How do you enforce strict safety against harmful or violent content without spying on users?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body pt-0 fs-5 text-dark">Privacy protects users from data harvesting, not from harm. We enforce clear rules, active moderation, and direct user reporting against violent, harmful, and unethical content without turning the platform into a surveillance system over innocent activity.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-8 fw-bold" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      How do the 15-day self-destruct, 60-second message wipe, and Dead Man's Switch work?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body pt-0 fs-5 text-dark">Accounts automatically self-destruct after 15 days of inactivity to prevent stale data buildup, messages automatically self-destruct after 24 hours by default, with Pro members able to customize them down to 60 seconds after reading, and the Dead Man's Switch triggers your pre-configured actions if you go silent past your set threshold.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-8 fw-bold" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      What happens when I enter the Pro duress password?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body pt-0 fs-5 text-dark">Entering your duress password on a Pro plan triggers an immediate wipe of local session data and active state on the device, helping you clear local traces quickly under pressure.</div>
+                  </div>
+                </div>
+                <div class="accordion-item border-bottom">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-8 fw-bold" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                      Can I use the social feed and marketplace for free, and what do paid plans add?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body pt-0 fs-5 text-dark">Yes, the Free plan includes core social posting, marketplace access, and zero data retention. Paid plans (Plus and Pro) add extras like account verification, higher marketplace listing limits, absence controls, duress wipe, and Dead Man's Switch features.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+
+ 
+
+  </div>
+
+  <footer class="footer bg-dark py-5 py-lg-11 py-xl-12">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-5 mb-8 mb-xl-0">
+          <div class="d-flex flex-column gap-8 pe-xl-5">
+            <h2 class="mb-0 text-white">Enter the web—leave no trace</h2>
+            <div class="d-flex flex-column gap-2">
+              <a href=" " target="_blank" class="link-hover hstack gap-3 text-white fs-5">
+                <iconify-icon icon="lucide:arrow-up-right" class="fs-7 text-primary"></iconify-icon>
+                support@spiderclub.org
+              </a>
+              <a href=" " target="_blank"
+                class="link-hover hstack gap-3 text-white fs-5">
+                <img src="../assets/images/logos/icons8-tor-48.png" alt="">
+                spiderclub.onion
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
+          <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
+            <li><a class="link-hover fs-5 text-white" href="index.html">Home</a></li>
+            <li><a class="link-hover fs-5 text-white" href="about-us.html">About us</a></li>
+            <li><a class="link-hover fs-5 text-white" id="services" href="#services">Security Controls</a></li>
+            
+            
+          </ul>
+        </div>
+        <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
+          <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
+            <li><a class="link-hover fs-5 text-white" href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a class="link-hover fs-5 text-white" href="terms-and-conditions.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-xl-3 mb-8 mb-xl-0">
+          <p class="mb-0 text-white text-opacity-70 text-md-end">© 2026 Spider Club</p>
+        </div>
+      </div>
+    </div>
+  <p class="mb-0 text-white text-opacity-70 text-md-center mt-10">Engineered for <a class="text-white" href="index.html" target="_blank"> privacy without harm.</a></p>
+  </footer>
+
+  <div class="get-template hstack gap-2">
+    <button class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0"
+      id="scrollToTopBtn">
+      <iconify-icon icon="lucide:arrow-up" class="fs-7 text-dark"></iconify-icon>
+    </button>
+  </div>
+
+
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="../assets/libs/aos-master/dist/aos.js"></script>
+  <script src="../assets/js/custom.js"></script>
+  <!-- solar icons -->
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</body>
+
+</html>
